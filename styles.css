@@ -76,10 +76,6 @@ ul a:hover {
   }
 }
 
-
-
-
-
 .history-container li {
   list-style: none;
   padding: 0 20px;
@@ -123,17 +119,20 @@ ul a:hover {
   }
   
 #svgBoxerBox {
-
   display: flex;
   justify-content: flex-end;
   justify-self: end;
 }
 
-#svgBoxerBox p {
+#svgBoxerBox p , h1,h2{
+  margin-left: 10em;
+  margin-bottom: 2em;
+  margin-Top: 2em;
   flex-shrink: inherit;
 }
 
-#homeBoxerImg {
+#svgBoxerBox img{
+  margin-right: 10em;
   width: 50%;
   height: 50%;
 
@@ -141,16 +140,18 @@ ul a:hover {
 
 #boxStuffBox {
   display: flex;
+  justify-content: flex-start;
+
 }
 
-#boxStuffBox boxStuffImg {
-  order: 1;
-  object-fit: cover;
-  justify-content: start;
-  text-align: end;
+#boxStuffBox img {
+  margin-left: 10em;
+  width: 50%  !important;
+  height: 50% !important;
 }
 
 #boxStuffBox p {
+  margin-right: 10em;
   order: 2;
   flex-shrink: 3;
   flex-wrap: wrap;
@@ -158,6 +159,7 @@ ul a:hover {
   margin-left: 50px;
   justify-content: right;
   text-align: left;
+  
 }
 
 .titleInPage {
