@@ -64,9 +64,27 @@ nav ul a:hover {
 
 
 .Page-title{
-  margin-top: 5em;
+  padding-top: 4em;
+  margin-top: 0.2em;
   text-align: center;
   font-size: 2em;
+  height: 10em;
+
+}
+#title-History{
+  background-image: url("src/HistoryBackground.jpg");
+  background-size: auto;
+  background-position: center;
+}
+#title-AboutUs{
+  background-image: url("src/aboutUsTitleBackgrund.jpg");
+  background-size: auto;
+  background-position: left;
+}
+#title-WebInfo{
+  background-image: url("src/ownThree.jpg");
+  background-size: auto;
+  background-position:  center;
 }
 #history-container{
   margin-top: 10em;
@@ -80,7 +98,7 @@ nav ul a:hover {
 }
 #history-chapter {
   margin-left: 10em;
-  margin-right: 10em ;
+  margin-right: 2em ;
   width: 100%;
   padding: 5em;
   font-size: 1.2em;
