@@ -26,112 +26,95 @@ nav {
   background: deepskyblue;
 }
 
-.logo {
+nav .logo {
   margin: 0 0 0 .45em;
 }
 
-.logo a {
+nav .logo a {
   color: rgb(28, 24, 22);
 }
 
-.logo,
-ul {
+nav .logo,
+nav ul {
   list-style: none;
   text-transform: uppercase;
 }
 
-.logo a,
+nav .logo a,
 ul a {
   text-decoration: none;
   letter-spacing: .45rem;
 }
 
-ul {
+nav ul {
   display: flex;
 }
 
-ul a {
+nav ul a {
   display: block;
   padding: 1em;
   color: white;
 }
 
-ul a:hover {
+nav ul a:hover {
   background: #00ace6;
 }
 
 /* *********** media queries *********** */
-@media all and (max-width: 990px) {
-  nav {
-    flex-direction: column;
-  }
 
-  .logo {
-    margin: 0;
-  }
-
-  ul {
-    width: 100%;
-    justify-content: space-around;
-  }
-}
-
-.history-container li {
-  list-style: none;
-  padding: 0 20px;
-}
-
-.history-container {
-  padding-top: 5%;
-  background-color: #b2dfdb;
-  list-style: none;
-  font-size: 1em;
-
-  text-align: center;
-  -webkit-flex: 2;
-  flex: 2;
-
-}
-
-.history-container a {
-  text-decoration: none;
-}
-
-.history-content {
-  margin-left: 10%;
-  margin-right: 10%;
-  flex: 5;
-  -webkit-flex: 5;
-}
-
-.container {
-  display: flexbox;
+#history-container{
+  margin-top: 10em;
+  display: flex;
+  justify-content: flex-start;
   padding-top: 1em;
   padding-bottom: 5%;
-  margin-top: 10%;
-  margin-left: 10%;
 
   min-height: 100%;
 }
-#contentContainerHomeAfterVideo{
-  grid-template-rows: repeat(2,auto);
-  grid-column: repeat(2,auto);
-  }
-  
+#history-chapter {
+  margin-left: 10em;
+  margin-right: 10em ;
+  width: 100%;
+  padding: 5em;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-wrap:wrap;
+  align-items: center;
+  flex-wrap:wrap; /* added  */
+  background-color: #00ace6;
+}
+#history-chapter a{
+  color: white;
+}
+
+#history-content p, .history-content h1, .history-content h2 {
+  margin-left: 10em;
+  margin-right: 10em ;
+  flex-wrap:wrap;
+  align-items: center;
+  flex-wrap:wrap; /* added  */
+}
+
+
+
+
 #svgBoxerBox {
   display: flex;
   justify-content: flex-end;
-  justify-self: end;
 }
 
-#svgBoxerBox p , h1,h2{
+#svgBoxerBox p,
+#svgBoxerBox  h1,
+#svgBoxerBox  h2 {
   margin-left: 10em;
   margin-bottom: 2em;
   margin-Top: 2em;
   flex-shrink: inherit;
 }
 
-#svgBoxerBox img{
+#svgBoxerBox img {
   margin-right: 10em;
   width: 50%;
   height: 50%;
@@ -146,7 +129,7 @@ ul a:hover {
 
 #boxStuffBox img {
   margin-left: 10em;
-  width: 50%  !important;
+  width: 50% !important;
   height: 50% !important;
 }
 
@@ -159,7 +142,7 @@ ul a:hover {
   margin-left: 50px;
   justify-content: right;
   text-align: left;
-  
+
 }
 
 .titleInPage {
@@ -175,14 +158,12 @@ ul a:hover {
   position: relative;
 }
 
-
 #video1 {
 
   margin: auto;
   display: block;
 
 }
-
 
 #videoMessage * {
 
@@ -232,27 +213,29 @@ ul a:hover {
     bottom: 60%;
   }
 }
+
 @media all and (max-width: 1000px) {
 
-  .logo {
+  nav .logo {
     margin: .25em 0;
     align-self: left;
   }
 
-  ul {
+  nav ul {
     flex-direction: column;
   }
 
-  ul a {
+  nav  ul a {
     text-align: center;
     padding: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  ul li:last-of-type a {
+  nav ul li:last-of-type a {
     border-bottom: none;
   }
+
   #videoMessage {
     right: -20%;
     bottom: 2%;
@@ -260,17 +243,21 @@ ul a:hover {
   }
 
 }
+
 @media (max-width: 500px) {
   #videoMessage {
     right: inherit;
     bottom: 2%;
     font-size: xx-small;
   }
+
   #boxStuffBox p {
-   font-size: xx-small;
-  }
-  #svgBoxerBox p,h1  {
     font-size: xx-small;
   }
-  
+
+  #svgBoxerBox p,
+  svgBoxerBox h1 {
+    font-size: xx-small;
+  }
+
 }
