@@ -125,13 +125,42 @@ flex: 5;
     display: flex;
     min-height: 100%;
 }
-.homeBoxerImg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#svgBoxerBox{
+    background-color: white;
+    display: inline-flex;
+}
+#svgBoxerBox p {
+    width: 50%;
+    flex: 1;
+    flex-wrap: nowrap;
+    background-color: white;
+    justify-content: start;
+    justify-self: start;
+    text-align: left;
+}
+#homeBoxerImg{
+    flex: 1;
+
+    width: 50%;
+    justify-self: end;
+    justify-content: end;
 
 }
-
+#boxStuffBox{
+    background-color: white;
+    display: flex;
+}
+#boxStuffBox boxStuffImg{
+    object-fit: cover;
+    justify-content: start;
+    text-align: end;
+}
+#boxStuffBox p{
+    justify-content: end;
+    margin-left: 50px; ;
+    justify-content: right;
+    text-align: left;
+}
   .titleInPage{
     font-size: large;
     margin-top: 400px;
@@ -141,35 +170,51 @@ flex: 5;
 
 }
 
-#videoDiv {
-    width: 100%;
-    height: 360px;
-    position: relative;
+#contentContainerHome{
+  position: relative;
+
+
 }
+#contentContainerHomeAfterVideo{
+}
+
+
 #video1 {
+
     margin: auto;
     display: block;
+
 }
-#videoMessage {
-    position: absolute;
-    top:100%;
-    left: 0;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center; 
-    width: 100%;
-    height: 100%;}
 
 
 #videoMessage *{
+
+    text-align: center;
+    margin-bottom: 10px;
     padding:0.4em;
-    margin: 0;
 }
 #videoMessage {
-    text-shadow: 2px 2px 2px #000000;
-    color:white;
+  bottom: 50%;
+  right: 30%;;
+  background-color: black;
+  opacity: 70%;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  text-shadow: 2px 2px 2px #000000;
+  color:white;
+  border-radius: 2%;
+}
+
+@media  (min-width:  3000px ) {
+  #videoMessage{
+    right: 40%;
+    bottom: 60%;
+
+    background-color: aqua; 
  }
+}
 #videoMessage h1{
     font-size: 2em;
     color:#ffffff;
@@ -185,13 +230,7 @@ flex: 5;
     color:#ffffff;
     text-align:center;
 }
-.videoClick {
-    text-align:center
-}
-.videoClick a{
-    color:white;
-    background-color:rgba(241, 241, 241, 0.25);
-    font-size: 1.7em;
-    cursor:pointer;
-    cursor:hand
-}
+
+
+
+
