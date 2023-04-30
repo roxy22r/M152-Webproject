@@ -1,44 +1,52 @@
+body {
+  background-color: #14121b;
+  color: #ffffff;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica;
 }
 
-header{
-    background-color: rgb(0, 0, 209);
-    opacity: 70%;
+header {
+  background-color: rgb(0, 0, 209);
+  opacity: 70%;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
 
-
-
-* {padding: 0; margin: 0;}
-
-nav  {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-      background: deepskyblue;
+  background: deepskyblue;
 }
 
 .logo {
   margin: 0 0 0 .45em;
 }
-    .logo a {
-      color: rgb(28, 24, 22);
-    }
 
-    .logo, ul {
-        list-style: none;
-        text-transform: uppercase;
-    }
+.logo a {
+  color: rgb(28, 24, 22);
+}
 
-    .logo a, ul a {
-        text-decoration: none;
-        letter-spacing: .45rem;
-    }
+.logo,
+ul {
+  list-style: none;
+  text-transform: uppercase;
+}
 
-ul  {
+.logo a,
+ul a {
+  text-decoration: none;
+  letter-spacing: .45rem;
+}
+
+ul {
   display: flex;
 }
 
@@ -49,7 +57,7 @@ ul a {
 }
 
 ul a:hover {
-    background: #00ace6;
+  background: #00ace6;
 }
 
 /* *********** media queries *********** */
@@ -57,145 +65,134 @@ ul a:hover {
   nav {
     flex-direction: column;
   }
-  
+
   .logo {
-  margin: 0;
-}
-  
-  ul  {
+    margin: 0;
+  }
+
+  ul {
     width: 100%;
     justify-content: space-around;
   }
 }
 
 
-@media all and (max-width: 600px) {
- 
-  .logo {
-    margin: .25em 0;
-    align-self: left; 
-}
-  
-  ul {
-    flex-direction: column;
-  }
-  
-  ul a { 
-    text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3); 
-    border-bottom: 1px solid rgba(0,0,0,0.1); 
-  }
-  
-  ul li:last-of-type a {
-    border-bottom: none;
-  }
-}
+
+
+
 .history-container li {
-    list-style: none;
-    padding: 0 20px;
+  list-style: none;
+  padding: 0 20px;
 }
+
 .history-container {
-    padding-top: 5%;
-    background-color: #b2dfdb;
-    list-style: none;
-    font-size: 1em;
+  padding-top: 5%;
+  background-color: #b2dfdb;
+  list-style: none;
+  font-size: 1em;
 
-    text-align: center;
-    -webkit-flex: 2;
-    flex: 2;
-
-}
-.history-container a{
-    text-decoration: none;
-}
-.history-content{
-margin-left: 10%;
-margin-right:10%;
-flex: 5;
--webkit-flex:5;
-}
-.container{
-    display: flexbox;
-    padding-top: 1em;
-    padding-bottom: 5%;
-    margin-top: 10%;
-    margin-left: 10%;
-    display: -webkit-flex;
-    display: flex;
-    min-height: 100%;
-}
-#svgBoxerBox{
-    background-color: white;
-    display: inline-flex;
-}
-#svgBoxerBox p {
-    width: 50%;
-    flex: 1;
-    flex-wrap: nowrap;
-    background-color: white;
-    justify-content: start;
-    justify-self: start;
-    text-align: left;
-}
-#homeBoxerImg{
-    flex: 1;
-
-    width: 50%;
-    justify-self: end;
-    justify-content: end;
-
-}
-#boxStuffBox{
-    background-color: white;
-    display: flex;
-}
-#boxStuffBox boxStuffImg{
-    object-fit: cover;
-    justify-content: start;
-    text-align: end;
-}
-#boxStuffBox p{
-    justify-content: end;
-    margin-left: 50px; ;
-    justify-content: right;
-    text-align: left;
-}
-  .titleInPage{
-    font-size: large;
-    margin-top: 400px;
-    margin-bottom: 100px;
-    justify-content: center;
-    text-align: center;
+  text-align: center;
+  -webkit-flex: 2;
+  flex: 2;
 
 }
 
-#contentContainerHome{
-  position: relative;
+.history-container a {
+  text-decoration: none;
+}
 
+.history-content {
+  margin-left: 10%;
+  margin-right: 10%;
+  flex: 5;
+  -webkit-flex: 5;
+}
 
+.container {
+  display: flexbox;
+  padding-top: 1em;
+  padding-bottom: 5%;
+  margin-top: 10%;
+  margin-left: 10%;
+
+  min-height: 100%;
 }
 #contentContainerHomeAfterVideo{
+  grid-template-rows: repeat(2,auto);
+  grid-column: repeat(2,auto);
+  }
+  
+#svgBoxerBox {
+
+  display: flex;
+  justify-content: flex-end;
+  justify-self: end;
+}
+
+#svgBoxerBox p {
+  flex-shrink: inherit;
+}
+
+#homeBoxerImg {
+  width: 50%;
+  height: 50%;
+
+}
+
+#boxStuffBox {
+  display: flex;
+}
+
+#boxStuffBox boxStuffImg {
+  order: 1;
+  object-fit: cover;
+  justify-content: start;
+  text-align: end;
+}
+
+#boxStuffBox p {
+  order: 2;
+  flex-shrink: 3;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-left: 50px;
+  justify-content: right;
+  text-align: left;
+}
+
+.titleInPage {
+  font-size: large;
+  margin-top: 400px;
+  margin-bottom: 100px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#contentContainerHome {
+  position: relative;
 }
 
 
 #video1 {
 
-    margin: auto;
-    display: block;
+  margin: auto;
+  display: block;
 
 }
 
 
-#videoMessage *{
+#videoMessage * {
 
-    text-align: center;
-    margin-bottom: 10px;
-    padding:0.4em;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0.4em;
 }
+
 #videoMessage {
   bottom: 50%;
-  right: 30%;;
+  right: 30%;
+  ;
   background-color: black;
   opacity: 70%;
   color: white;
@@ -203,34 +200,75 @@ flex: 5;
   padding-right: 20px;
   position: absolute;
   text-shadow: 2px 2px 2px #000000;
-  color:white;
+  color: white;
   border-radius: 2%;
 }
 
-@media  (min-width:  3000px ) {
-  #videoMessage{
+
+#videoMessage h1 {
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+}
+
+#videoMessage h2 {
+  font-size: 1.5em;
+  color: #ffffff;
+  text-align: center;
+}
+
+#videoMessage h3 {
+  font-size: 1.2em;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+@media (min-width: 3000px) {
+  #videoMessage {
     right: 40%;
     bottom: 60%;
-
-    background-color: aqua; 
- }
+  }
 }
-#videoMessage h1{
-    font-size: 2em;
-    color:#ffffff;
-    text-align:center;
+@media all and (max-width: 1000px) {
+
+  .logo {
+    margin: .25em 0;
+    align-self: left;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  ul a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  ul li:last-of-type a {
+    border-bottom: none;
+  }
+  #videoMessage {
+    right: -20%;
+    bottom: 2%;
+    font-size: xx-small;
+  }
+
 }
-#videoMessage h2{
-    font-size: 1.5em;
-    color:#ffffff;
-    text-align:center;
+@media (max-width: 500px) {
+  #videoMessage {
+    right: inherit;
+    bottom: 2%;
+    font-size: xx-small;
+  }
+  #boxStuffBox p {
+   font-size: xx-small;
+  }
+  #svgBoxerBox p,h1  {
+    font-size: xx-small;
+  }
+  
 }
-#videoMessage h3{
-    font-size: 1.2em;
-    color:#ffffff;
-    text-align:center;
-}
-
-
-
-
