@@ -68,8 +68,9 @@ nav ul a:hover {
   justify-content: flex-start;
   padding-top: 1em;
   padding-bottom: 5%;
-
   min-height: 100%;
+  margin-left: 10em;
+  margin-right: 10em ;
 }
 #history-chapter {
   margin-left: 10em;
