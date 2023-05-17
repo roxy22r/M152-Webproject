@@ -379,3 +379,7 @@ nav ul a:hover {
   align-items: center;
   flex-shrink: 3;
 }
+#footer{
+background-color: #000000;
+color:  white;
+}
