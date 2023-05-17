@@ -366,3 +366,16 @@ nav ul a:hover {
     background-position: 0% 50%;
   }
 }
+#webInfo{
+  text-align: center;
+  margin-top: 2em;
+  display: block;
+}
+#webInfo p, h1,h2 {
+  margin-top: 2em;
+  margin-left: 10em;
+  margin-right: 10em;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-shrink: 3;
+}

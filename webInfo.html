@@ -27,6 +27,7 @@
     <div class="Page-title" id="title-WebInfo">
         <h1>WebInfo</h1>
     </div>
+<div id="webInfo">
 
     <div>
         <h1>Conzept</h1>
@@ -68,60 +69,76 @@
     <h1>Fileformat comparison</h1>
     <div>
         <h2>Video</h2>
-
+        
         <video width="50%" preload autoplay controls muted playsinline loop>
             <source src="src\YodaVideo.webm" type="video/webm">
         </video>
         <video preload controls muted>
             <source src="src\YodaSound.ogg" type="audio/ogg">
-
+            
+        </video>
+        
+        <h3>MP4</h3>
+        <video id="homeVideoVideo" width="25%" preload autoplay  muted playsinline loop>
+            <source src="src\BoxIng.mp4" type="video/mp4">
+        </video> 
+        <p>
+            MP4 (MPEG-4 file format) is a standard container format for MPEG-4 ASP/ AVC video streams; based on the
+        </p>
+        Quicktime container format.
+        <h3> MOV</h3>
+        <video id="homeVideoVideo" width="25%" preload autoplay  muted playsinline loop>
+            <source src="src\BoxIng.MOV" >
         </video>
         <p>
-        <h3>MP4</h3>
-        MP4 (MPEG-4 file format) is a standard container format for MPEG-4 ASP/ AVC video streams; based on the
-        Quicktime container format.
-        <h3> OGG</h3>
-        OGG is a format for Firefox that can contain audio as well as video.
+            MOV is a video format developed by Apple and originally used by QuickTime Player.
+            MOV supports a variety of codecs for compressing films and other video files.
+            It is also compatible with Mac and Windows as well as iOS-based devices such as iPhone and iPad.
+        </p> 
         <h3>webM</h3>
-        WebM is Google and they initially wanted webM to be the standard for video on the internet.
+        <video id="homeVideoVideo" width="25%" preload autoplay  muted playsinline loop>
+            <source src="src\BoxIng.webM" type="video/webM">
+        </video> 
+        <p>
+            WebM is Google and they initially wanted webM to be the standard for video on the internet.
         FLV Flash Video from Adobe Systems the Flash Video (.flv) is a format optimised for web streaming, but a
         Shockwave player must be stored in the web directory of the server, because flv cannot
-        </p>
-    </div>
-    <div>
-        <h2>Imgag</h2>
-        <h3>May the force be with you with boxing</h3>
-        <img height="800px" src="src\ownThree.jpg" alt="Selbst erstelltes Bild Eins">
-    </div>
-    <div>
-        <h2>Audio</h2>
-
-        <h3>MP3</h3>
-        <video preload controls muted>
-            <source src="src\YodaSound.mp3" type="audio/mp3">
-        </video>
-        <p>
-            This audio file is one of the best known. This format saves a lot of storage space.
-            The bit rate is 192 kBit/s and corresponds to CD quality.
-            A big disadvantage of MP3 is the loss of quality in files with low bit rates.
-        </p>
-
-        <h3>AAC</h3>
-        <video preload controls muted>
-            <source src="src\YodaSound.aac" type="audio/aac">
+    </p>
+</div>
+<div>
+    <h2>Imgag</h2>
+    <h3>May the force be with you with boxing</h3>
+    <img height="800px" src="src\ownThree.jpg" alt="Selbst erstelltes Bild Eins">
+</div>
+<div>
+    <h2>Audio</h2>
+    
+    <h3>MP3</h3>
+    <video preload controls muted>
+        <source src="src\YodaSound.mp3" type="audio/mp3">
+    </video>
+    <p>
+        This audio file is one of the best known. This format saves a lot of storage space.
+        The bit rate is 192 kBit/s and corresponds to CD quality.
+        A big disadvantage of MP3 is the loss of quality in files with low bit rates.
+    </p>
+    
+    <h3>AAC</h3>
+    <video preload controls muted>
+        <source src="src\YodaSound.aac" type="audio/aac">
         </video>
         <p>
             AAC audio files use less memory than MP3 audio files.
             Furthermore, the sound quality is the best with AAC
             but it is sadly not yet supported by all programmes.
         </p>
-
+        
         <h3>WAV</h3>
         <video preload controls muted>
             <source src="src\YodaSound.wav" type="audio/wav">
         </video>
         <p>
-
+            
             WAV files take up a lot of memory, but it is a good alternative to other audio formats.
             On the other hand, it is very good for audio editing purposes. In most cases a WAV file is 80% larger than
             an
@@ -129,5 +146,6 @@
         </p>
     </div>
     <div id="animate-area"></div>
-
-</html>
+</div>
+    
+    </html>
